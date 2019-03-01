@@ -9,8 +9,11 @@
   "scripts": {
     "setup": "npm link && npm link karma-coverage-istanbul-instrumenter",
     "lint": "eslint ./src",
-    "test": "npm run test:build && karma start test/es6-native/karma.conf.js && karma start test/rollup/karma.conf.js",
-    "test:build": "cd test/rollup && rollup --config rollup.config.js && cd ../.."
+    "test": "npm run test:build && karma start test/es6-native/karma.conf.js && karma start test/rollup/karma.conf.js && karma start test/inline-sourcemap/karma.conf.js",
+    "test:build": "npm run test:build:rollup && npm run test:build:inline-sourcemap",
+    "test:build:rollup": "cd test/rollup && rollup --config rollup.config.js && cd ../..",
+    "test:build:inline-sourcemap": "cd test/inline-sourcemap && tsc",
+    "clean": "rm -rf test/*/build"
   },
   "repository": {
     "type": "git",
@@ -46,7 +49,8 @@
     "karma-coverage-istanbul-reporter": "^2.0.4",
     "karma-jasmine": "^2.0.1",
     "rollup": "^1.1.2",
-    "rollup-plugin-babel": "^4.3.2"
+    "rollup-plugin-babel": "^4.3.2",
+    "typescript": "^3.3.3333"
   },
   "peerDependencies": {
     "karma": "3 || 4"
