@@ -16,6 +16,10 @@ Please note that this plugin only instruments (ie prepares for coverage) the cod
 
 - Unit testing native ES6 code with coverage in Karma and Chrome Headless, no bundling or transpiling: [test/es6-native](https://github.com/monounity/karma-coverage-istanbul-instrumenter/tree/master/test/es6-native).
 
+- Unit testing Typescript code transpiled to ES6 + external source maps with coverage in Karma and Chrome Headless: [test/external-sourcemap](https://github.com/monounity/karma-coverage-istanbul-instrumenter/tree/master/test/external-sourcemap).
+
+- Unit testing Typescript code transpiled to ES6 + inline source maps with coverage in Karma and Chrome Headless: [test/inline-sourcemap](https://github.com/monounity/karma-coverage-istanbul-instrumenter/tree/master/test/inline-sourcemap).
+
 - Unit testing ES6 code transpiled to ES5 with coverage in Karma and Chrome Headless, bundled with Rollup, transpiled with Babel: [test/rollup](https://github.com/monounity/karma-coverage-istanbul-instrumenter/tree/master/test/rollup).
 
 ## Installation
