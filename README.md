@@ -8,9 +8,9 @@
 
 ## About
 
-This plugin instruments javascript code for coverage using the latest [istanbul 1.x APIs](https://github.com/istanbuljs). Source maps are supported.
+This plugin instruments javascript code for coverage using the latest [istanbul 1.x APIs](https://github.com/istanbuljs). Source maps and mapping transpiled/bundled code to get coverage for the original source code is fully supported.
 
-Please note that this plugin only instruments (ie prepares for coverage) the code before the unit tests are executed, the actual reporting is done by [karma-coverage-istanbul-reporter](https://github.com/mattlewis92/karma-coverage-istanbul-reporter).
+For configuring coverage output format, thresholds and other reporting options, please see [karma-coverage-istanbul-reporter](https://github.com/mattlewis92/karma-coverage-istanbul-reporter).
 
 ## Examples
 
