@@ -11,7 +11,10 @@ const createPreprocessor = (logger, config) => {
 
         log.debug("Processing \"%s\".", file.originalPath);
 
-        const converter = convertSourceMap.fromMapFileSource(content, path.dirname(file.originalPath));
+        let sourceMap = convertSourceMap.fromSource(content);
+        if(!sourceMap) {
+            sourceMap = convertSourceMap.fromMapFileSource(content, path.dirname(file.originalPath));
+        }
 
         instrumenter.instrument(content, file.originalPath, (error, instrumentedSource) => {
             if(error) {
@@ -21,7 +24,7 @@ const createPreprocessor = (logger, config) => {
             else {
                 done(instrumentedSource);
             }
-        }, converter ? converter.toObject() : undefined);
+        }, sourceMap ? sourceMap.sourcemap : undefined);
     };
 };
 

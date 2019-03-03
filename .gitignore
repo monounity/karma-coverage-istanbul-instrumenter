@@ -2,3 +2,4 @@ bundle.*
 coverage
 node_modules
 package-lock.json
+test/**/build
