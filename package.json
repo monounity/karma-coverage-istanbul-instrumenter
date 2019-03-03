@@ -28,9 +28,13 @@
     "ES6",
     "ES2015",
     "babel",
-    "rollup"
+    "rollup",
+    "typescript"
   ],
   "author": "Erik Barke",
+  "contributors": [
+    "Louis-Dominique Dubeau (https://github.com/lddubeau)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/monounity/karma-coverage-istanbul-instrumenter/issues"
