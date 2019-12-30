@@ -26,7 +26,9 @@
     "coverage",
     "ES5",
     "ES6",
+    "ES7",
     "ES2015",
+    "ES2016",
     "babel",
     "rollup",
     "typescript"
