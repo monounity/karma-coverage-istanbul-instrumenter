@@ -14,7 +14,7 @@
     "test:build:rollup": "cd test/rollup && rollup --config rollup.config.js && cd ../..",
     "test:build:inline-sourcemap": "cd test/inline-sourcemap && tsc",
     "test:build:external-sourcemap": "cd test/external-sourcemap && tsc",
-    "clean": "rm -rf test/*/build"
+    "clean": "rm -rf test/*/build && rm -rf test/*/coverage"
   },
   "repository": {
     "type": "git",
@@ -44,20 +44,20 @@
   "homepage": "https://github.com/monounity/karma-coverage-istanbul-instrumenter",
   "dependencies": {
     "convert-source-map": "^1.7.0",
-    "istanbul-lib-instrument": "^4.0.0"
+    "istanbul-lib-instrument": "^4.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "eslint": "^6.8.0",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@rollup/plugin-babel": "^5.0.2",
+    "eslint": "^7.1.0",
     "jasmine-core": "^3.5.0",
-    "karma": "^4.4.1",
+    "karma": "^5.0.9",
     "karma-chrome-launcher": "^3.1.0",
-    "karma-coverage-istanbul-reporter": "^2.1.1",
-    "karma-jasmine": "^2.0.1",
-    "rollup": "^1.27.14",
-    "rollup-plugin-babel": "^4.3.3",
-    "typescript": "^3.7.4"
+    "karma-coverage-istanbul-reporter": "^3.0.2",
+    "karma-jasmine": "^3.1.1",
+    "rollup": "^2.10.8",
+    "typescript": "^3.9.3"
   },
   "peerDependencies": {
     "karma": "3 || 4 || 5"
