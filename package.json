@@ -60,6 +60,6 @@
     "typescript": "^3.7.4"
   },
   "peerDependencies": {
-    "karma": "3 || 4"
+    "karma": "3 || 4 || 5"
   }
 }
