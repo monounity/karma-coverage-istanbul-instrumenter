@@ -28,7 +28,7 @@ module.exports = function(config) {
 
         coverageIstanbulReporter: {
             skipFilesWithNoCoverage: true,
-            reports: ["html"],
+            reports: ["html-spa"],
             dir: path.join(__dirname, "coverage"),
         },
 

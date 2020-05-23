@@ -30,7 +30,7 @@ module.exports = function(config) {
         reporters: ["progress", "coverage-istanbul"],
 
         coverageIstanbulReporter: {
-            reports: ["html"],
+            reports: ["html-spa"],
             dir: path.join(__dirname, "coverage"),
         },
 

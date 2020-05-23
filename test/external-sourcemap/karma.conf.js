@@ -31,7 +31,7 @@ module.exports = function(config) {
         },
 
         coverageIstanbulReporter: {
-            reports: ["html"],
+            reports: ["html-spa"],
             dir: path.join(__dirname, "coverage"),
         },
 
