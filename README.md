@@ -100,4 +100,4 @@ The plugin supports all options supported by [istanbul-lib-instrument](https://g
 
 MIT
 
-© 2019 Erik Barke, Monounity
+© 2022 Erik Barke, Monounity
